@@ -264,8 +264,8 @@
         .demo-video {
             display: block;
             width: 100%;
-            max-width: 860px;
-            margin: 1.2rem 0 0;
+            max-width: 100%;
+            margin: 0.6rem 0 0;
             background: #000;
             border: 1px solid var(--hairline);
             border-radius: 4px;
@@ -317,7 +317,7 @@
         <h2>SnakePlanning</h2>
         <p class="panel-title">Architecture</p>
         <div class="svg-container">
-            <svg viewBox="0 0 280 600" preserveAspectRatio="xMidYMid meet" xmlns="http://www.w3.org/2000/svg">
+            <svg viewBox="0 0 280 660" preserveAspectRatio="xMidYMid meet" xmlns="http://www.w3.org/2000/svg">
                 <line x1="140" y1="46" x2="140" y2="54" stroke="#38B2AC" stroke-width="2"/>
                 <line x1="140" y1="106" x2="140" y2="114" stroke="#38B2AC" stroke-width="2"/>
                 <line x1="140" y1="166" x2="140" y2="174" stroke="#38B2AC" stroke-width="2"/>
@@ -327,55 +327,61 @@
                 <line x1="140" y1="406" x2="140" y2="414" stroke="#38B2AC" stroke-width="2"/>
                 <line x1="140" y1="466" x2="140" y2="474" stroke="#38B2AC" stroke-width="2"/>
                 <line x1="140" y1="526" x2="140" y2="534" stroke="#38B2AC" stroke-width="2"/>
+                <line x1="140" y1="586" x2="140" y2="594" stroke="#38B2AC" stroke-width="2"/>
 
                 <g class="nav-node" data-target="overview">
                     <rect x="12" y="4" width="256" height="42" rx="4" class="node-bg"/>
                     <text x="140" y="30" font-size="14" font-weight="600" class="node-text" text-anchor="middle">Overview</text>
                 </g>
-                <g class="nav-node" data-target="pieces">
+                <g class="nav-node" data-target="planning-demo">
                     <rect x="12" y="54" width="256" height="52" rx="4" class="node-bg"/>
-                    <text x="140" y="76" font-size="14" font-weight="600" class="node-text" text-anchor="middle">1. Software components</text>
-                    <text x="140" y="94" font-size="11" class="node-sub" text-anchor="middle">Standalone or a host panel</text>
+                    <text x="140" y="76" font-size="14" font-weight="600" class="node-text" text-anchor="middle">Planning demo</text>
+                    <text x="140" y="94" font-size="11" class="node-sub" text-anchor="middle">Watch the walkthrough</text>
+                </g>
+                <g class="nav-node" data-target="pieces">
+                    <rect x="12" y="114" width="256" height="52" rx="4" class="node-bg"/>
+                    <text x="140" y="136" font-size="14" font-weight="600" class="node-text" text-anchor="middle">1. Software components</text>
+                    <text x="140" y="154" font-size="11" class="node-sub" text-anchor="middle">Standalone or a host panel</text>
                 </g>
                 <g class="nav-node" data-target="mvc">
-                    <rect x="12" y="114" width="256" height="52" rx="4" class="node-bg"/>
-                    <text x="140" y="136" font-size="14" font-weight="600" class="node-text" text-anchor="middle">2. Why MVC</text>
-                    <text x="140" y="154" font-size="11" class="node-sub" text-anchor="middle">One reason to change each layer</text>
+                    <rect x="12" y="174" width="256" height="52" rx="4" class="node-bg"/>
+                    <text x="140" y="196" font-size="14" font-weight="600" class="node-text" text-anchor="middle">2. Why MVC</text>
+                    <text x="140" y="214" font-size="11" class="node-sub" text-anchor="middle">One reason to change each layer</text>
                 </g>
                 <g class="nav-node" data-target="gesture">
-                    <rect x="12" y="174" width="256" height="52" rx="4" class="node-bg"/>
-                    <text x="140" y="196" font-size="14" font-weight="600" class="node-text" text-anchor="middle">3. One gesture</text>
-                    <text x="140" y="214" font-size="11" class="node-sub" text-anchor="middle">Click, route, draw</text>
+                    <rect x="12" y="234" width="256" height="52" rx="4" class="node-bg"/>
+                    <text x="140" y="256" font-size="14" font-weight="600" class="node-text" text-anchor="middle">3. One gesture</text>
+                    <text x="140" y="274" font-size="11" class="node-sub" text-anchor="middle">Click, route, draw</text>
                 </g>
                 <g class="nav-node" data-target="controller">
-                    <rect x="12" y="234" width="256" height="52" rx="4" class="node-bg"/>
-                    <text x="140" y="256" font-size="14" font-weight="600" class="node-text" text-anchor="middle">4. Controller</text>
-                    <text x="140" y="274" font-size="11" class="node-sub" text-anchor="middle">BronchoController.h</text>
+                    <rect x="12" y="294" width="256" height="52" rx="4" class="node-bg"/>
+                    <text x="140" y="316" font-size="14" font-weight="600" class="node-text" text-anchor="middle">4. Controller</text>
+                    <text x="140" y="334" font-size="11" class="node-sub" text-anchor="middle">BronchoController.h</text>
                 </g>
                 <g class="nav-node" data-target="engine">
-                    <rect x="12" y="294" width="256" height="52" rx="4" class="node-bg"/>
-                    <text x="140" y="316" font-size="14" font-weight="600" class="node-text" text-anchor="middle">5. Engine</text>
-                    <text x="140" y="334" font-size="11" class="node-sub" text-anchor="middle">BronchoEngine.h</text>
+                    <rect x="12" y="354" width="256" height="52" rx="4" class="node-bg"/>
+                    <text x="140" y="376" font-size="14" font-weight="600" class="node-text" text-anchor="middle">5. Engine</text>
+                    <text x="140" y="394" font-size="11" class="node-sub" text-anchor="middle">BronchoEngine.h</text>
                 </g>
                 <g class="nav-node" data-target="view">
-                    <rect x="12" y="354" width="256" height="52" rx="4" class="node-bg"/>
-                    <text x="140" y="376" font-size="14" font-weight="600" class="node-text" text-anchor="middle">6. View</text>
-                    <text x="140" y="394" font-size="11" class="node-sub" text-anchor="middle">TrackPoint and BronchoView</text>
+                    <rect x="12" y="414" width="256" height="52" rx="4" class="node-bg"/>
+                    <text x="140" y="436" font-size="14" font-weight="600" class="node-text" text-anchor="middle">6. View</text>
+                    <text x="140" y="454" font-size="11" class="node-sub" text-anchor="middle">TrackPoint and BronchoView</text>
                 </g>
                 <g class="nav-node" data-target="pipeline">
-                    <rect x="12" y="414" width="256" height="52" rx="4" class="node-bg"/>
-                    <text x="140" y="436" font-size="14" font-weight="600" class="node-text" text-anchor="middle">7. Route pipeline</text>
-                    <text x="140" y="454" font-size="11" class="node-sub" text-anchor="middle">STL to camera track</text>
+                    <rect x="12" y="474" width="256" height="52" rx="4" class="node-bg"/>
+                    <text x="140" y="496" font-size="14" font-weight="600" class="node-text" text-anchor="middle">7. Route pipeline</text>
+                    <text x="140" y="514" font-size="11" class="node-sub" text-anchor="middle">STL to camera track</text>
                 </g>
                 <g class="nav-node" data-target="horizon">
-                    <rect x="12" y="474" width="256" height="52" rx="4" class="node-bg"/>
-                    <text x="140" y="496" font-size="14" font-weight="600" class="node-text" text-anchor="middle">8. Engine View Example</text>
-                    <text x="140" y="514" font-size="11" class="node-sub" text-anchor="middle">ApplyStableViewUp</text>
+                    <rect x="12" y="534" width="256" height="52" rx="4" class="node-bg"/>
+                    <text x="140" y="556" font-size="14" font-weight="600" class="node-text" text-anchor="middle">8. Engine View Example</text>
+                    <text x="140" y="574" font-size="11" class="node-sub" text-anchor="middle">ApplyStableViewUp</text>
                 </g>
                 <g class="nav-node" data-target="build">
-                    <rect x="12" y="534" width="256" height="52" rx="4" class="node-bg"/>
-                    <text x="140" y="556" font-size="14" font-weight="600" class="node-text" text-anchor="middle">9. Builds</text>
-                    <text x="140" y="574" font-size="11" class="node-sub" text-anchor="middle">SuperBuild and submodule</text>
+                    <rect x="12" y="594" width="256" height="52" rx="4" class="node-bg"/>
+                    <text x="140" y="616" font-size="14" font-weight="600" class="node-text" text-anchor="middle">9. Builds</text>
+                    <text x="140" y="634" font-size="11" class="node-sub" text-anchor="middle">SuperBuild and submodule</text>
                 </g>
             </svg>
         </div>
@@ -423,9 +429,15 @@
             <div class="content-box" style="max-width: 860px;">
                 <p>The CT is a NIfTI study. The lung model is the airway meshes. A point chosen in that model becomes a path through the lumen, and the plan keeps the path as a named target. Playback flies the endoscope along the route that was just planned.</p>
                 <p>The wxWidgets shell owns windows and menus. <code>BronchoController</code> owns the plan, the camera, and the active route. <code>BronchoEngine</code> builds that route from the meshes. <code>BronchoView</code> draws the model, the path, and the CT slices.</p>
-                <p class="hint" style="margin-top: 0.4rem;">Scroll, or click a section on the left. <a href="#planning-demo">Play the planning demo</a>.</p>
+                <p class="hint" style="margin-top: 0.4rem;">Scroll, or click a section on the left.</p>
             </div>
-            <video id="planning-demo" class="demo-video" controls playsinline preload="metadata" src="Planningdemo-28-Sep-Compressed.mp4">
+        </div>
+
+        <div class="slide" id="planning-demo" data-nav="planning-demo">
+            <span class="badge">Demo</span>
+            <h2 class="slide-title">Planning demo</h2>
+            <p class="lede">A physician loads a CT, picks a point in the airway, and flies the endoscope along the route.</p>
+            <video class="demo-video" controls playsinline preload="metadata" src="Planningdemo-28-Sep-Compressed.mp4">
                 <a href="Planningdemo-28-Sep-Compressed.mp4">Play the planning demo</a>
             </video>
         </div>
