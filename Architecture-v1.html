@@ -261,6 +261,16 @@
             font-size: 0.95rem;
         }
 
+        .demo-video {
+            display: block;
+            width: 100%;
+            max-width: 860px;
+            margin: 1.2rem 0 0;
+            background: #000;
+            border: 1px solid var(--hairline);
+            border-radius: 4px;
+        }
+
         a { color: var(--accent); }
         .doc-links { margin-top: 0.4rem; }
         .doc-links a {
@@ -413,8 +423,11 @@
             <div class="content-box" style="max-width: 860px;">
                 <p>The CT is a NIfTI study. The lung model is the airway meshes. A point chosen in that model becomes a path through the lumen, and the plan keeps the path as a named target. Playback flies the endoscope along the route that was just planned.</p>
                 <p>The wxWidgets shell owns windows and menus. <code>BronchoController</code> owns the plan, the camera, and the active route. <code>BronchoEngine</code> builds that route from the meshes. <code>BronchoView</code> draws the model, the path, and the CT slices.</p>
-                <p class="hint" style="margin-top: 0.4rem;">Scroll, or click a section on the left.</p>
+                <p class="hint" style="margin-top: 0.4rem;">Scroll, or click a section on the left. <a href="#planning-demo">Play the planning demo</a>.</p>
             </div>
+            <video id="planning-demo" class="demo-video" controls playsinline preload="metadata" src="Planningdemo-28-Sep-Compressed.mp4">
+                <a href="Planningdemo-28-Sep-Compressed.mp4">Play the planning demo</a>
+            </video>
         </div>
 
         <div class="slide" id="pieces" data-nav="pieces">
